@@ -19,10 +19,10 @@
     $mail = new PHPMailer;
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                     
     $mail->isSMTP();                                            
-    $mail->Host       = 'smtp.office365.com';                
+    $mail->Host       = '';                
     $mail->SMTPAuth   = true;                                  
-    $mail->Username   = 'fabricanacionaldesoftware@aguascalientes.tecnm.mx';   
-    $mail->Password   = 'Prueba123$';  //La contraseña del correo debe de cambiarse ya que de lo contrario los correos no se van a enviar                              
+    $mail->Username   = '';   
+    $mail->Password   = '';  //La contraseña del correo debe de cambiarse ya que de lo contrario los correos no se van a enviar                              
     $mail->SMTPSecure = 'STARTTLS'; 
     $mail->Port       = 587; 
 
@@ -73,7 +73,7 @@
                     '".$date."')";
                 if($r=mysqli_query($conn, $course_student)){
                     //Correo
-                    $mail->setFrom('fabricanacionaldesoftware@aguascalientes.tecnm.mx','Fabrica Nacional de Software');
+                    $mail->setFrom('','Fabrica Nacional de Software');
                     $mail->addAddress($correo_registrado, $name." ".$lastname);
                     //Content
                     $mail->isHTML(true); 
