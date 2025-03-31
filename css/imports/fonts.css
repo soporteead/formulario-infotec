@@ -11,3 +11,17 @@
     font-family: 'Montserrat-Italic';
     src: url('../../fonts/Montserrat-Italic.ttf');
 }
+
+@font-face {
+    font-family: 'Noto-Regular';
+    src: url('../../fonts/NotoSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Noto-Bold';
+    src: url('../../fonts/NotoSans-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Noto-Italic';
+    src: url('../../fonts/NotoSans-Italic.ttf');
+}
+
